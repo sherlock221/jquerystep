@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>分步导航插件</title>
+    <link rel="stylesheet" href="css/nextui.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.step.1.0.0.js"></script>
+    <style type="text/css">
+
+
+
+    </style>
+</head>
+<body>
+
+        <div id="main">
+
+            <div class="item">
+
+                 <div class="itemBg">
+
+                     测试第一个页面
+
+                 </div>
+
+                    <div class="item-btn">
+                        <input type="button" value="下一步" class="next"/>
+                    </div>
+            </div>
+
+            <div class="item">
+
+                <div class="itemBg">
+
+                    测试第二个页面
+
+                </div>
+
+                <div class="item-btn">
+
+                    <input type="button" value="上一步" class="prev"/>
+                    <input type="button" value="下一步" class="next"/>
+                </div>
+            </div>
+
+            <div class="item">
+
+                <div class="itemBg">
+
+                    测试第三个页面
+
+                </div>
+
+                <div class="item-btn">
+
+                    <input type="button" value="上一步" class="prev"/>
+                    <input type="button" value="下一步" class="next"/>
+                </div>
+            </div>
+
+            <div class="item">
+
+                <div class="itemBg">
+
+                    测试第四个页面
+
+                </div>
+
+                <div class="item-btn">
+
+                    <input type="button" value="上一步" class="prev"/>
+                    <input type="button" value="完成" class="next"/>
+                </div>
+            </div>
+
+        </div>
+</body>
+</html>
+<script type="text/javascript">
+
+    $(function(){
+        $("#main").step({
+            btnCallBack : function(dom,step){
+                console.log(step);
+            }
+
+        });
+    });
+
+</script>

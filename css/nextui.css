@@ -1,0 +1,27 @@
+/* demo 的css样式 可以重写  */
+.item{
+    width: 100%;
+    height: 300px;
+    background: darkgray;
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+}
+
+.next{
+
+}
+
+.item-btn{
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 230px;
+}
+
+.next,.prev{
+    width: 100px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #d3d3d3;
+    cursor: pointer;
+}
